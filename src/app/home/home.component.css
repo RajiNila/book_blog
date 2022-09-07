@@ -1,0 +1,54 @@
+table {
+    width: 75%;
+    margin: 15px;
+  }
+  th{
+    background-color: orangered;
+    font-size: large;
+  }
+  mat-list{
+    border: none;
+    width: 75%;
+    margin: 15px;
+  }
+.do{
+    color: white;
+    background-color: rgb(202, 0, 158);
+}
+mat-drawer{
+  width: 20%;
+}
+.container {
+  width: 1340px;
+  height: 650px;
+  margin: 10px;
+  border: none;  
+}
+.d-flex{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+ 
+}
+img{
+  width: 200px;
+  height: 300px;
+  transition: 0.3s ease-in-out;
+}
+img:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1)
+}
+mat-card-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;  
+}
+
+
+
+
+

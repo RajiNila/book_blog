@@ -1,0 +1,59 @@
+<mat-card>
+<mat-toolbar color="accent">
+   
+        <h2>Cart Items</h2>
+        <div class="spacer"></div>
+        <button mat-raised-button (click)="emptyCart()"> Clear Cart</button>
+        </mat-toolbar>
+        <mat-card-content>
+            <ng-container *ngIf="books.length!=0">
+                <table >
+                    <thead class="table">
+                        <tr>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>MRP</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+    <tbody>
+        <tr *ngFor="let item of books;">
+            <td><img src="https://bookcart.azurewebsites.net/upload/{{item.coverFileName}}" alt="image">
+            </td>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+            <td>
+                <button mat-mini-fab disabled>-</button>
+                 1 <button class="btn"  mat-icon-button>+ </button>
+            </td>
+            <td>₹{{item.price}}.00</td>
+            <td>
+                <button mat-icon-button (click)="clearCartItem(item)" (click)="openSnackBar()">
+                    <mat-icon color="accent">delete</mat-icon>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td><b>Cart Total</b></td>
+            <td><b>₹{{Total}}.00</b></td>
+            <td>
+                <button mat-raised-button color="warn" routerLink="/home">CheckOut</button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    </ng-container>
+
+<ng-container *ngIf="books.length == 0">
+    <div class="empty">
+    <h2>Shopping Cart is Empty!</h2>
+    <button mat-raised-button color="accent" routerLink="/home">Contunue Shopping</button> 
+</div>  
+</ng-container> 
+  
+</mat-card-content>   
+</mat-card>

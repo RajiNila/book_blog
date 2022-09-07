@@ -1,0 +1,21 @@
+:host {
+  display: grid;
+  place-items: center;  
+  overflow: auto;
+}
+.space {
+    flex: 1 1 auto;
+  }
+  .search {
+    height:30px;
+    width: 400px;
+    margin-left: 150px;
+    font-size: large;
+    border-radius: 5px;
+  }
+  .counter{
+    background-color:red;
+    font-size: medium;
+    border-radius: 10px;    
+  }
+  

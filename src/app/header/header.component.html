@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="d-flex p-2">
+    <button mat-icon-button >
+      <mat-icon routerLink="/home">book</mat-icon>
+    </button>
+    <span>Book Cart</span>
+   
+    <form >
+        <input class="search" type="text" placeholder="Search books or Authors"/>          
+    </form>
+
+    <span class="space"></span>
+    <button mat-icon-button  routerLink="/cart"> 
+      <mat-icon>shopping_cart</mat-icon>
+      <span class="counter">{{totalItem}}</span>
+    </button>
+    <button mat-button routerLink="/login" >
+      Login
+    </button>
+  </mat-toolbar>

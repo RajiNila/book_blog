@@ -1,0 +1,37 @@
+mat-card{
+width: 85%;
+margin-left: 6%;
+margin-top: 10px;
+background-color: aliceblue;
+
+}
+.spacer{
+    flex: 1 1 auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  tr:hover {
+    background-color: coral;
+}
+img{
+  width:50px;
+  height:70px;
+}
+.btn{
+  background-color: red;
+  color: white;
+  
+}
+
+

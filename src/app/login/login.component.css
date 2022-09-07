@@ -1,0 +1,31 @@
+:host {
+  display: grid;
+  place-items: center;   
+}
+mat-card{
+    height: 300px;
+    width:500px;    
+    background-color: aliceblue;  
+    align-items: center;
+    margin-top: 10%;
+   }
+   .spacer {
+    flex: 1 1 auto;
+  }
+  .btn{
+    color: black;
+    background-color: aliceblue;
+  }
+  .input{
+    width: 100%;
+    padding: 15px;
+    
+   
+  }
+  button{
+    float: right;
+    color: white;
+    background-color: blue;
+  }
+  
+  
